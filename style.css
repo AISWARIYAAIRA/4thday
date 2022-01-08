@@ -1,0 +1,102 @@
+/*css stylesheet allows your html page to have more style beyond default*/
+/* 3 basic ways of connecting html and css is Element,.,# */
+
+
+.container
+{
+    border: 10px solid rgb(59, 47, 226);
+    background-color: rgb(53, 187, 187);
+    /*white space when changing and referring to the margin of an element around the outside of the elemt box */
+    margin: 50px;
+    /*white space when changing and referring to the padding of an element inside the element box and around the image*/
+    padding: 20px;
+    text-align: center; 
+    text-decoration-line: overline;
+}
+
+.head
+{
+    text-align: center;
+    color: brown;
+    /* text-shadow is inserted */
+    text-shadow: 4px 4px hsl(0, 100%, 50%);
+} 
+      header{
+
+        border: 5px solid blue;
+        box-sizing: content-box;  
+        padding:30px;
+      }
+      nav ul{
+          color: aquamarine;
+          list-style: none;
+         
+      }
+      nav li{
+          display: inline-block;
+          padding: 30px;
+      }
+      .nav-wrapper{
+          background-color: aquamarine;
+      }
+      #image{
+          border-radius: 50%;
+          
+      }
+      #image1{
+          border-radius: 50%;
+      }
+      /* box is created*/
+      .box{
+          /*display and its possible property block,inline,inline-block*/
+
+          /* display:inline-block; */
+          width: 200px;
+          height: 200px;
+          background: brown;
+          margin: 10px;
+      }
+      /* Flexbox help with in styling,it helps us to easily position elemnts insider a parent container */
+
+      .flex{
+          margin: 30px;
+          border: 3px solid black;
+          display: flex;
+          /*flex wrap used to flexible to see in any screen */
+          flex-flow: wrap row-reverse;
+          /* flex-start ,flext-end ,space-between,space-around elements  */
+          justify-content: center;
+          padding: 100px;
+         /* flex-direction: row-reverse;/*column reverse */
+
+      }
+
+      @keyframes fadeMe{
+          0%{
+              opacity: 1;
+          }
+          50%{
+            opacity: 0.5;
+        }
+          100%{
+              opacity: 0;
+          }
+      }
+
+      #box1 {
+           animation-name: fadeMe;
+          animation-duration: 4s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          position: absolute; 
+          animation: fadeMe 4s linear none infinite;
+          
+          /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      }
+      form input, textarea, button{
+          display: none;
+          margin:  30px;
+      }
+      
+
+     
